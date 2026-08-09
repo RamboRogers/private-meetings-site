@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ramborogers.github.io/private-meetings-site/sitemap.xml

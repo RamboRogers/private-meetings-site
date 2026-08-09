@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050706">
+  <meta name="description" content="Privacy Policy for the Private Meetings macOS app.">
+  <link rel="canonical" href="https://ramborogers.github.io/private-meetings-site/privacy/">
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <title>Privacy Policy — Private Meetings</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="../"><img src="../assets/app-icon.png" width="42" height="42" alt=""><span>Private Meetings</span></a>
+      <div class="nav-links"><a href="./" aria-current="page">Privacy</a><a href="../support/">Support</a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="shell">
+        <p class="eyebrow">Policy // Effective August 8, 2026</p>
+        <h1>Privacy, stated <span class="signal">plainly.</span></h1>
+        <p class="lede">Private Meetings is designed to record and process meetings on your Mac. Local Private AI is the default processing route.</p>
+      </div>
+    </header>
+
+    <div class="shell document">
+      <aside class="toc" aria-label="Privacy policy sections">
+        <p>On this page</p>
+        <a href="#stored">Data stored on your Mac</a>
+        <a href="#local-ai">Local AI</a>
+        <a href="#remote">Advanced Remote</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#retention">Retention and deletion</a>
+        <a href="#collection">Operator data collection</a>
+        <a href="#services">External services</a>
+        <a href="#recording">Recording responsibility</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <article class="prose">
+        <div class="notice"><strong>Short version:</strong> Local meeting processing stays on your Mac after the verified models are installed. Private Meetings has no advertising or analytics SDK and does not require an account for local features.</div>
+
+        <h2 id="stored">Data stored on your Mac</h2>
+        <p>When you record or import a meeting, Private Meetings may store:</p>
+        <ul>
+          <li>system-audio and microphone recordings;</li>
+          <li>a mixed meeting recording;</li>
+          <li>meeting title, context, attendees, and timestamps;</li>
+          <li>transcript text, anonymous speaker labels, and timing data;</li>
+          <li>an optional meeting summary; and</li>
+          <li>processing status and diagnostic error messages.</li>
+        </ul>
+        <p>This information is stored in the app’s private container on your Mac.</p>
+
+        <h2 id="local-ai">Local Private AI</h2>
+        <p>The app can download pinned model files from Hugging Face. A model download exposes ordinary network-request information, such as your IP address, to the model host, but it does not include meeting audio, transcripts, summaries, or meeting context. Private Meetings verifies the expected model files before activation.</p>
+        <p>After the models are installed, Local Private AI processes meeting content on your Mac. A local-processing failure does not automatically upload meeting content.</p>
+
+        <h2 id="remote">Optional Advanced Remote processing</h2>
+        <p>You may explicitly configure Advanced Remote transcription or summary endpoints. If you enable and confirm a remote route:</p>
+        <ul>
+          <li>remote transcription sends the meeting’s mixed audio to the configured endpoint;</li>
+          <li>remote summarization sends transcript text and meeting context to the configured endpoint;</li>
+          <li>a configured summary API key is sent as an authorization credential; and</li>
+          <li>plaintext HTTP, if separately enabled, does not encrypt or authenticate the connection.</li>
+        </ul>
+        <p>Data sent to an endpoint you configure is governed by that endpoint operator’s privacy and retention practices. Private Meetings does not silently switch from local processing to a remote route.</p>
+
+        <h2 id="permissions">Microphone, system audio, network, and files</h2>
+        <p>Recording begins only after you click Start Meeting and macOS grants the required permissions. Private Meetings uses ScreenCaptureKit for system audio and does not write screen pixels to disk.</p>
+        <p>Network access is used to download verified model files and, only when you explicitly configure it, connect to an Advanced Remote endpoint. User-selected read-only access lets the app import a file you choose without modifying the original.</p>
+
+        <h2 id="retention">Retention and deletion</h2>
+        <p>Meeting data remains on your Mac until you delete an individual meeting, use <strong>Settings → Purge</strong>, remove the app’s container, or restore or replace that data through operating-system tools.</p>
+        <p>Purge removes meeting recordings, isolated tracks, transcripts, summaries, sidecar metadata, orphaned files under the private Recordings directory, and meeting database records. It does not remove downloaded models, preferences, or Keychain credentials.</p>
+        <p>Application-level deletion cannot guarantee erasure from SSD wear-leveling, backups, snapshots, caches, or copies you exported elsewhere.</p>
+
+        <h2 id="collection">Data collected by the operator</h2>
+        <p>Private Meetings does not operate an account service and does not include advertising or analytics SDKs. When Local Private AI is selected, meeting audio, transcript text, summaries, and meeting context are not transmitted to Matthew Rogers.</p>
+        <p>If you voluntarily open a support issue or contact the operator through an external service, that service will process the information you choose to provide under its own terms.</p>
+
+        <h2 id="services">External services</h2>
+        <ul>
+          <li><strong>Apple:</strong> distributes the app and processes App Store purchases under Apple’s privacy policy.</li>
+          <li><strong>Hugging Face:</strong> hosts model files downloaded at your request.</li>
+          <li><strong>Your configured endpoint:</strong> receives meeting content only when you explicitly enable and confirm an Advanced Remote route.</li>
+          <li><strong>GitHub and X:</strong> host the optional public support channels linked from this site.</li>
+        </ul>
+
+        <h2 id="recording">Recording responsibility</h2>
+        <p>You are responsible for complying with applicable recording, consent, employment, confidentiality, and data-protection laws. Obtain any required permission before recording another person.</p>
+
+        <h2>Children</h2>
+        <p>Private Meetings is a general productivity tool and is not directed to children.</p>
+
+        <h2>Changes</h2>
+        <p>Material changes will be reflected on this page and in the policy’s effective date.</p>
+
+        <h2 id="contact">Contact</h2>
+        <p>Operator: Matthew Rogers</p>
+        <p>For questions, use the <a href="../support/">Private Meetings support page</a> or contact <a href="https://x.com/matthewrogers">@matthewrogers on X</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">Private Meetings<span>BUILT BY MATTHEW ROGERS // @matthewrogers</span></div>
+      <div class="footer-links"><a href="../">Home</a><a href="./">Privacy</a><a href="../support/">Support</a></div>
+    </div>
+  </footer>
+</body>
+</html>

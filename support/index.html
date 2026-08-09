@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050706">
+  <meta name="description" content="Support and frequently asked questions for Private Meetings on macOS.">
+  <link rel="canonical" href="https://ramborogers.github.io/private-meetings-site/support/">
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <title>Support — Private Meetings</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="../"><img src="../assets/app-icon.png" width="42" height="42" alt=""><span>Private Meetings</span></a>
+      <div class="nav-links"><a href="../privacy/">Privacy</a><a href="./" aria-current="page">Support</a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="shell">
+        <p class="eyebrow">Support // Private Meetings 1.0</p>
+        <h1>Answers without the <span class="signal">runaround.</span></h1>
+        <p class="lede">Start with the FAQ. If something still is not right, open a public support issue without including meeting content, credentials, private endpoints, or other confidential information.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/RamboRogers/private-meetings-site/issues/new">Open a support issue</a>
+          <a class="button" href="https://x.com/matthewrogers">Contact @matthewrogers</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <p class="terminal-label">Quick checks</p>
+          <h2>Before opening an issue.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card"><span class="index">PERMISSIONS</span><h3>Confirm macOS access</h3><p>Private Meetings needs Microphone and Screen &amp; System Audio Recording permission. Screen recording approval can require an app relaunch.</p></article>
+          <article class="card"><span class="index">LOCAL MODELS</span><h3>Check model status</h3><p>Open Local AI settings and verify the pinned transcription model. Summaries require the separate local summary model.</p></article>
+          <article class="card"><span class="index">MICROPHONE</span><h3>Verify the actual device</h3><p>Confirm the selected microphone name in the app. Meeting software can use a different device than the macOS system default.</p></article>
+          <article class="card"><span class="index">PRIVACY</span><h3>Do not post meeting data</h3><p>Never attach recordings, transcripts, API keys, credentials, private hostnames, or confidential meeting details to a public issue.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="shell">
+        <div class="section-head"><p class="terminal-label">FAQ</p><h2>Common questions.</h2></div>
+        <div class="faq">
+          <details><summary>How long can I record?</summary><p>Live capture stops automatically at 70 minutes and warns at 65 minutes. The pinned MOSS model documents a 90-minute single-pass ceiling; the app keeps twenty minutes of margin for reliable finalization and transcription.</p></details>
+          <details><summary>Does Private Meetings identify people by name?</summary><p>No. It separates speaker turns with anonymous labels such as <code>SPEAKER_01</code> and <code>SPEAKER_02</code>. It does not perform biometric voice identification or guess a real identity.</p></details>
+          <details><summary>Does my meeting leave the Mac?</summary><p>Not when Local Private AI is active. After the local models are installed, transcription and local summaries run on the Mac. Advanced Remote routes send data only after you configure, enable, and confirm that route.</p></details>
+          <details><summary>Why does the app need Screen &amp; System Audio Recording permission?</summary><p>ScreenCaptureKit uses that permission to capture system audio. Private Meetings does not write screen pixels to disk.</p></details>
+          <details><summary>Which microphone is recorded?</summary><p>The app shows and persists the actual microphone device selected for capture. You can choose the system default, a USB microphone, or a compatible audio interface.</p></details>
+          <details><summary>Do local models require internet access?</summary><p>Internet access is required to download them. The app pins and verifies the expected model files before activation. Once installed, local meeting processing does not require uploading meeting content.</p></details>
+          <details><summary>Can I import an existing recording?</summary><p>Yes. Choose a supported audio or video file. Private Meetings reads the selected source, creates a private audio-only copy, and does not modify the original file.</p></details>
+          <details><summary>What does Purge remove?</summary><p>Purge removes all meetings, recordings, isolated tracks, transcripts, summaries, sidecar metadata, orphaned recording files, and meeting database records. It keeps downloaded AI models, preferences, and Keychain credentials.</p></details>
+          <details><summary>Is this a subscription?</summary><p>No. Private Meetings is preparing for a one-time $4.99 Mac App Store launch.</p></details>
+          <details><summary>What macOS version is required?</summary><p>macOS 15 or later on Apple silicon.</p></details>
+          <details><summary>What should I include in a support issue?</summary><p>Include the app version, macOS version, the feature you were using, what you expected, and the exact non-sensitive error message. Do not post meeting content, credentials, private endpoint details, or personal information.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell callout">
+        <div><h2>Protect the meeting while asking for help.</h2><p>Public support works best with reproducible steps and exact error text—not recordings, transcripts, credentials, or confidential context.</p></div>
+        <a class="button primary" href="https://github.com/RamboRogers/private-meetings-site/issues/new">Open GitHub issue</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">Private Meetings<span>BUILT BY MATTHEW ROGERS // @matthewrogers</span></div>
+      <div class="footer-links"><a href="../">Home</a><a href="../privacy/">Privacy</a><a href="./">Support</a></div>
+    </div>
+  </footer>
+</body>
+</html>
