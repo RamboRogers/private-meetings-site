@@ -175,6 +175,12 @@ h1 .signal { color: var(--green); text-shadow: 0 0 28px rgba(57, 255, 136, 0.18)
 .section-head h2 { margin: 0; font-size: clamp(2.25rem, 5vw, 4.6rem); line-height: 1; letter-spacing: -0.052em; }
 .section-head p { margin: 20px 0 0; color: var(--muted); font-size: 1.08rem; }
 
+.product-capture { margin: 0 0 36px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+.product-capture > a { display: block; border-radius: 6px 6px 0 0; }
+.product-capture img { display: block; width: 100%; height: auto; border-radius: 6px 6px 0 0; }
+.product-capture figcaption { padding: 20px 24px; color: var(--muted); border-top: 1px solid var(--border); }
+.product-capture figcaption strong { display: block; margin-bottom: 6px; color: var(--text); }
+
 .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .card {
   padding: 28px;
